@@ -5,12 +5,12 @@ import Online from './components/Homepage/Online.jsx'
 import PrivateSessions from './components/Homepage/PrivateSessions.jsx'
 import { Route, Routes } from 'react-router-dom'
 import MediaPage from './components/Mediapage/Mediapage.jsx'
-import AdminPage from './components/Adminpage/Adminpage.jsx'
 import MemberManagement from './components/Adminpage/MemberManagement.jsx'
 import ContentManagement from './components/Adminpage/ContentManagement.jsx'
 import EventManagement from './components/Adminpage/EventManagement.jsx'
 import ExtendedMenu from './components/Adminpage/ExtendedMenu.jsx'
 import SeeAllMembers from './components/Adminpage/Memberpage/SeeAllMembers.jsx'
+import AdminPage from './components/Adminpage/AdminPage.jsx'
 
 // import "./homepage.css";
 
@@ -33,10 +33,7 @@ function App() {
                 <Route path="faceyoga" element={<FaceYoga />} />
                 <Route path="online" element={<Online />} />
                 <Route path="privatesessions" element={<PrivateSessions />} />
-                <Route
-                    path="memberOverview"
-                    element={<SeeAllMembers />}
-                />
+                <Route path="memberOverview" element={<SeeAllMembers />} />
             </Routes>
         </>
     )
